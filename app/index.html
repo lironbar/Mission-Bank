@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="IMDB-App" >
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mission</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/ngstorage/ngstorage.js"></script>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://use.fontawesome.com/d07ae8a03a.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="app.config.js"></script>
+  <script src="services/name.service.module.js"></script>
+  <script src="services/name.service.js"></script>
+  <script src="home-page/home-page.module.js"></script>
+  <script src="home-page/home-page.js"></script>
+  <script src="contact-page/contact-page.module.js"></script>
+  <script src="contact-page/contact-page.js"></script>
+  <script src="thank-you/thank-you.module.js"></script>
+  <script src="thank-you/thank-you.js"></script>
+
+</head>
+
+<body>
+
+<ng-include src="'navbar/navbar.html'"></ng-include>
+
+  <div ng-view></div>
+
+</body>
+</html>

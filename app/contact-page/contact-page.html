@@ -1,0 +1,42 @@
+<div class="container ">
+  <div class="container-fluid marginTop">
+    <div class="row">
+      <h1> This is contact page </h1>
+
+
+      <form name="userForm" ng-submit="submitForm('/mission/thankyou')" novalidate>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>Name:</label>
+            <input class="form-control" type="text" name="name" ng-model="user.name" required/>
+            <span ng-show="myForm.name.$error.required">Please Enter Name</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-6" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+            <label>Email address:</label>
+            <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email"
+            ng-model="user.email"
+
+            required/>
+
+            <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="text-danger">Enter a valid email.</p>
+            <p ng-show="userForm.email.$valid && !userForm.email.$pristine" class="text-success">Email is valid.</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" ng-ng-disabled="userForm.$invalid" class="btn btn-primary">Submit</button>
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+</div>

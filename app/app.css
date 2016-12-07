@@ -1,0 +1,22 @@
+/* app css stylesheet */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.marginTop {
+  margin-top: 40px;
+}
+
+.paddingLeft {
+  padding-left: 20px;
+}
